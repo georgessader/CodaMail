@@ -1,0 +1,131 @@
+#popupimg{
+			width: 100%;
+			position: absolute;
+			top: 0px;
+			height: 100%;
+			left: 0px;
+			animation: pup 2.5s forwards;
+		}
+		@keyframes pup{
+			50%{
+				opacity: 1;
+			}
+			100%{
+				opacity: 0;
+			}
+		}
+		body{
+			background-image: url("Images/OAVJ6006.JPG");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+		.top{
+			float: right;
+			margin:20px 50px 0px 0px;
+		}
+		form{
+			border: 2px solid;
+			border-color: rgb(1,11,64);
+			width: 30%;
+			border-radius: 20px;
+			padding: 20px;
+			margin: auto;
+			margin-top: 50px;
+			text-align: center;
+			color: white;
+		}
+		#f1{
+			background-image: url(Images/back2.png);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border: none;
+			margin-bottom: 50px;
+			margin-top: 10px;
+		}
+		.input{
+			border: none;
+			border-radius: 5px;
+			padding: 10px;
+			margin: 0px 15px 15px 15px;
+			width: 90%;
+			background-color: rgb(1,46,108); ;
+			color: white;
+			border-color: lightblue;
+		}
+		#sbutton{
+			margin: 10px; 
+			margin-top: 20px;
+			border: solid 1px white;
+			border-radius: 30px;
+			width: 30%;
+			background-color: white;
+			padding: 5px 8px;
+			font-weight: bolder;
+			letter-spacing: 2px;
+			
+		}
+		.logo{
+			display: inline;
+
+		}
+		#logoImage{
+			margin: 20px 30px 0px 30px;
+		}
+		a.one:link, a.one:visited{
+			color: white;
+			font-weight: bold;
+			text-decoration: none;
+			font-size: 20px ;
+			font-weight: bolder;
+			padding: 15px;
+		}
+		a.one:hover{
+			background-color: rgb(52,19,90);
+			text-decoration: underline;
+			text-decoration-color: rgb(1,11,64);
+			/*border: 1px solid;
+			border-radius: 20px;*/
+		}
+		.signbutton{
+			border: 1px solid;
+			display: inline;
+			border-color: white;
+			border-radius: 20px;
+			color: white;
+			padding: 5px 20px;
+			background: none;
+		}
+		.signbutton:hover{
+			background-color: purple;
+			color: black;
+			border: 1px solid;
+			border-color: purple;
+			border-radius: 20px;
+			font-weight: bold;
+		}
+		#signLink{
+			text-decoration: none;
+		}
+		.simg{
+			width: 20px;
+			height: 20px;
+		}
+		.head{
+			color: white;
+			font-weight: bold;
+		}
+		.icondivs{
+			display: flex;
+			background-color:none;
+		}
+		.iconimgs{
+			flex: 1;
+			height: 40px;
+		}
+		#content{
+			display: none;
+		}
+		#terms{
+			margin-bottom: 20px;
+		}

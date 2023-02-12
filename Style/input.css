@@ -1,0 +1,49 @@
+
+#inp-icon1{
+	background: url(Images/iconemail.png)no-repeat 100%;
+	background-position:1px ;
+	background-size: 40px;
+	padding: 10px 10px 5px 40px;
+	margin: 0px 15px 6px 15px;
+	border-bottom: 4px solid rgb(0,99,173);
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	color: rgb(1,46,108);
+	font-weight: bold;
+}
+#inp-icon2{
+	background: url(Images/iconpass.png)no-repeat 100%;
+	background-position:1px ;
+	background-size: 40px;
+	padding: 10px 10px 5px 40px;
+	margin: 0px 15px 6px 15px;
+	border-bottom: 4px solid rgb(0,99,173);
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	color: rgb(1,46,108);
+	font-weight: bold;
+}
+.icondivs{
+	display: flex;
+	background-color:none;
+}
+
+::placeholder {
+  	color: rgb(1,46,108);
+  	font-weight: bolder;
+  	font-size:16px;
+  	opacity: 1; /* Firefox */
+}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ 	color: rgb(1,46,108);
+ 	font-weight: bolder;
+ 	font-size:20px;
+}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+ 	color: rgb(1,46,108);
+ 	font-weight: bolder;
+}
