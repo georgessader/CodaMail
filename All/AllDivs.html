@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<style>
+
+		body,html {
+			width: 100%;
+			height: 100%;
+			margin: auto;
+		}
+		#Alld{
+			display: flex;
+		}
+		#Mdiv{
+			flex: 1;
+			background-image: url("leftdiv.jpg");
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			padding-left: 30px;
+			width: fit-content;
+			font-size: 20px;
+		}
+
+
+		#div1{
+			border-radius: 40px;
+			padding: -10px;
+			padding-left: 30px;
+			padding-right: 30px;
+			margin-top: 20px;
+			border-width: 1px;
+			border-color: white;
+			border-style: solid;
+			width: fit-content;
+
+		}
+		
+		.img{
+			width: 20px;
+			height: 20px;
+			margin-right: 5px;
+			margin-top: 10px;
+		}
+		.imgA{
+			width: 20px;
+			height: 20px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.p1{
+			display: flex;
+		}
+		#comp{
+			margin-top: 25px;
+		}
+		.pdiv{
+			margin-left: 20px;
+			color: white;
+		}
+		.hrp{
+			border-bottom-style: solid;
+			width: 200px;
+			border-width: 1px;
+
+		}
+
+		#maindiv{
+			flex: 1;
+			width: 20%;
+			background-color: rgb(231,242,244);
+			height: 100%;
+		}
+		#divB{
+			padding-left: 10px;
+			background-color: white;
+			border-style: solid;
+			border-color: white;
+			vertical-align: middle;
+			
+		}
+		#divB1{
+
+		}
+		.img1{
+			margin-top: 12px;
+			width:7%;
+			height: 7%;
+			margin-right: 12px;
+		}
+		.img2{
+			width:50px;
+			margin-top: 10px;
+		}
+		.p2{
+			padding-left: 10px;
+			display: flex;
+			border-top:solid;
+			border-bottom: solid;
+			border-bottom: 0px;
+			padding-bottom: 10px;
+			font-family: Arial;
+			border-color: rgb(187,215,216);
+			transition-duration: 1s;
+
+		}
+		.pdiv1{
+			margin-top: 15px;
+			margin-left: 10px 
+		}
+		.inp{
+			font-size: 20px;
+			font-family: Arial;
+			padding: 10px;
+		}
+		#refresh{
+			/*margin-top: 20px;*/
+		}
+		.rdiv{
+			display: flex;
+		}
+		.p1:hover{
+			background-color: rgb(167,237,245);
+			border-right-style: solid;
+			border-top-style: none;
+			border-bottom-style: none;
+			border-color: red;
+			border-width: 3px;
+			transition-duration: 1s;
+		}
+		.p2:hover{
+			background-color: rgb(167,237,245);
+			border-right-style: solid;
+			border-top-style: none;
+			border-bottom-style: none;
+			border-color: red;
+			border-width: 3px;
+			transition-duration: 1s;
+		}
+
+
+		#mdiv3{
+			flex:3;
+			/*margin: 20px;*/
+		}
+		#top{
+			display: flex;
+			margin-top: 12px;
+			margin-bottom: 15px;
+			padding-left: 15px;
+		}
+		#r1{
+			float: right;
+			display: flex;
+			padding-right: 20px;
+			position: fixed;
+			right: 0;
+		}
+		#container {
+ 			 position: relative;
+ 			 padding-right:  20px;
+		}
+		#main {
+  			position: relative;
+  			border: 1px solid grey;
+  			height: 25px;
+  			background: none;
+  			width: 250px;
+  			border-radius: 50px;
+  			padding-left: 31px;
+  			padding-right: 15px;
+  			padding-top: 2px;
+  			padding-bottom: 2px;
+  			font-size: 13px;
+  			color: #555;
+		}
+		#main:focus {
+ 			outline: none;
+		}
+
+		#searchicon {
+  			position: absolute;
+  			height: 12px;
+  			width: 12px;
+  			background: transparent;
+  			border: 1px solid grey;
+  			left: 10px;
+  			top: 8px;
+  			border-radius: 100%;
+		}
+		#searchicon:after {
+  			content: "";
+  			position: absolute;
+  			background: grey;
+  			height: 6px;
+  			width: 2px;
+  			bottom: -5px;
+  			right: -3px;
+  			transform: rotate(-45deg);
+		}
+		.img3{
+			flex: 1;
+			height: 20px;
+			width: 20px;
+		}
+		#nimp{
+			color: grey;
+		}
+		#second{
+			background-color: rgb(250,250,250);
+			border-top: 1px solid grey;
+			padding: 16px;
+		}
+		#wordsleft{
+			color: grey;
+			font-size: 16px;
+			display: flex;
+			margin-right:20px; 
+		}
+		.p3{
+			color: grey;
+			margin-right: 20px;
+			border:none;
+			background-color: rgb(250,250,250);
+			padding-top: 15px;
+		}
+		.p3:hover{
+			border:none;
+			background-color:rgb(250,250,250);
+			border-top: 3px solid blue;
+		}
+		#right{
+			float: right;
+			/*position: fixed;
+			right:0;*/
+		}
+		.new{
+			display: relative;
+		}
+		.pencil{
+			border:none;
+			background-color: white;
+			cursor: pointer;
+			/*border-radius: 100%;*/
+			margin-right: 15px;
+			padding: 3px;
+			width: fit-content;
+			padding-top: 4px;
+		}
+		.pencil2{
+			border:none;
+			background-color: rgb(250,250,250);
+			cursor: pointer;
+			border-radius: 100%;
+			margin-right: 15px;
+			margin-bottom:10px;
+		}
+		.box1{
+			border:1px solid;
+			background-color: white;
+			border-color: white;
+			padding: 15px;
+			margin-right: 80px;
+			margin-top: 30px;
+
+		}
+		.left2{
+			float: right;
+			color: grey;
+			font-size: 8px;
+
+		}
+		.line{
+			border-bottom:   1px solid grey;
+			border-top-width: 100%;
+		}
+		#downarrow{
+			float: right;
+			border:none;
+			background-color: white;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		#border{
+			border-left: 2px solid;
+			float: left;
+			height: 40px;
+			border-left-color: red;
+			margin-right: 10px;
+		}
+		.v{
+			margin-right: 10px;
+		}
+		.to{
+			color: purple;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+
+<div id=Alld>
+	<div id="Mdiv">
+		<div id="submain">
+			<div class="p1" id="div1"><img class="imgA" src="pencil.png">
+				<p class="pdiv" id="comp">Compose</p>
+			</div>
+			<h1>Name</h1>
+		</div>
+		<div class="p1">
+			<img class="img"  src="message.png"><p class="pdiv">conversation</p>
+		</div>
+		<div class="p1">
+			<img class="img"  src="inbox.png"><p class="pdiv">inbox</p>
+		</div>
+		<div class="p1">
+			<img class="img"  src="email.png"><p class="pdiv">sent items</p>
+		</div>
+		<div class="p1 hrp">
+			<img class="img"  src="paper-stationery-with-silhouette.png"><p class="pdiv">drafts</p>
+		</div>
+		<div class="p1">
+			<img class="img"  src="verified.png"><p class="pdiv">archive</p>
+		</div>
+		<div class="p1">
+			<img class="img"  src="poison.png"><p class="pdiv">spam</p>
+		</div>
+		<div class="p1 hrp">
+			<img class="img"  src="delete.png"><p class="pdiv">trash</p>
+		</div>
+		
+	</div>
+
+	<div id=maindiv> 
+	<div id=divB>
+		<div class='rdiv'>
+			<img src="refresh.png" class='img1'><p id='refresh'>Refresh<p>
+		</div>
+	</div>
+	<div id="divB1">
+		<p class='inp'>today</p>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<br>
+		<p class='inp'>yesterday</p>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+		<div class='p2'>
+			<img src="img.png" class='img2'><p class='pdiv1'>Khaled Saleh</p>
+		</div>
+	</div>
+	</div>
+
+
+
+	<div id="mdiv3">
+		<div id="top">
+			<div id="new">
+				<button class="pencil"><img class="img3" src="pencil.png" ></button><span id="nimp">New Message</span></div>
+			<div id="r1">
+				<div id="container">
+	  				<input id="main" placeholder="search..." >
+	  				<span id="searchicon"></span>
+				</div>
+				<button class="pencil"><img class="img3" src="settings.png" ></button>
+				<button class="pencil"><img class="img3" src="off-button.png"></button>
+			</div>
+		</div>
+		<div id="second">
+			<div id="wordsleft">
+				<button class="p3">CHAT</button>
+				<button class="p3">ATTACHMENTS</button>
+			</div>
+			<div id="right">
+				<button class="pencil2"><img class="img3" src="forward.png"></button><br>
+				<button class="pencil2"><img class="img3" src="reply-all.png"></button><br>
+				<button class="pencil2"><img class="img3" src="right-arrow (2).png"></button><br>
+			</div>
+			<div class="box1">
+				<p> Re: New Mail<span class="left2">Today 11:45</span></p>
+				<p>from: <a href="mailto" class="to">Kaled Saleh</a></p>
+				<p>to: 	<a href="mailto" class="to">abd alkadri</a><span class="left2"><img class="img3" src="verified.png" class="v"> <img class="img3" src="poison.png" class="v"> <img class="img3" src="delete.png"></span></p>
+				<div class="line"></div>
+				<p><textarea name="textmessage" rows="10" cols="80" style="width :100%">Text message...</textarea>
+				<div class="line"></div>
+				<p><img class="img3" src="presentation.png"> Home.ppt(12mb) <img class="img3" src="logotype.png"> About.pdf(3mb) <!-- <span class="border"></span> --><button id="downarrow"><img class="img3" src="down-arrow.png"></button></p>
+			</div>
+			<div class="box1">
+				<p> New Mail<span class="left2">Today 11:45</span></p>
+				<p>from: <a href="mailto" class="to">Kaled Saleh</a></p>
+				<p>to: 	<a href="mailto" class="to">abd alkadri</a>
+					<span class="left2"><img class="img3" src="verified.png" class="v">
+					<img class="img3" src="poison.png" class="v"> <img class="img3" src="delete.png"></span>
+				</p>
+				<div class="line"></div>
+				<p><textarea name="textmessage" rows="10" cols="80" style="width :100%">Text message...</textarea>
+				<div class="line"></div>
+				<p><span id="border"></span> abdelkadie.com <br> +961 71 609 071</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

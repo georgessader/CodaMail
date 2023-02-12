@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.div3{
+			flex:10;
+			/*margin: 20px;*/
+		}
+		.top{
+			display: flex;
+			margin-bottom: 20px;
+			padding-left: 15px;
+		}
+		.r1{
+			float: right;
+			display: flex;
+			padding-right: 20px;
+			position: fixed;
+			right: 0;
+		}
+		.container {
+ 			 position: relative;
+ 			 padding-right:  20px;
+		}
+		.main {
+  			position: relative;
+  			border: 1px solid grey;
+  			height: 25px;
+  			background: none;
+  			width: 250px;
+  			border-radius: 50px;
+  			padding-left: 31px;
+  			padding-right: 15px;
+  			padding-top: 2px;
+  			padding-bottom: 2px;
+  			font-size: 13px;
+  			color: #555;
+		}
+		.main:focus {
+ 			outline: none;
+		}
+
+		.searchicon {
+  			position: absolute;
+  			height: 12px;
+  			width: 12px;
+  			background: transparent;
+  			border: 1px solid grey;
+  			left: 10px;
+  			top: 8px;
+  			border-radius: 100%;
+		}
+		.searchicon:after {
+  			content: "";
+  			position: absolute;
+  			background: grey;
+  			height: 6px;
+  			width: 2px;
+  			bottom: -5px;
+  			right: -3px;
+  			transform: rotate(-45deg);
+		}
+		img{
+			flex: 1;
+			height: 20px;
+
+		}
+		#nimp{
+			color: grey;
+		}
+		.second{
+			
+			background-color: rgb(200,200,200);
+			border-top: 1px solid grey;
+			padding: 16px;
+		}
+		#wordsleft{
+			color: grey;
+			font-size: 16px;
+			display: flex;
+			margin-right:20px; 
+		}
+		#p{
+			color: grey;
+			margin-right: 20px;
+			border:none;
+			background-color: rgb(200,200,200);
+			padding-top: 15px;
+		}
+		#p:hover{
+			border:none;
+			background-color:rgb(200,200,200);
+			border-top: 3px solid blue;
+		}
+		.right{
+			float: right;
+			/*position: fixed;
+			right:0;*/
+		}
+		.new{
+			display: relative;
+		}
+		#pencil{
+			border:none;
+			background-color: white;
+			cursor: pointer;
+			/*border-radius: 100%;*/
+			margin-right: 15px;
+			padding: 3px;
+			width: fit-content;
+			padding-top: 4px;
+		}
+		#pencil2{
+			border:none;
+			background-color: rgb(200,200,200);
+			cursor: pointer;
+			border-radius: 100%;
+			margin-right: 15px;
+			margin-bottom:10px;
+		}
+		.box1{
+			border:1px solid;
+			background-color: white;
+			border-color: white;
+			padding: 15px;
+			margin-right: 80px;
+			margin-top: 30px;
+
+		}
+		#left2{
+			float: right;
+			color: grey;
+			font-size: 8px;
+
+		}
+		.line{
+			border-bottom:   1px solid grey;
+			border-top-width: 100%;
+		}
+		.downarrow{
+			float: right;
+			border:none;
+			background-color: white;
+			margin-right: 20px;
+			margin-top: 5px;
+		}
+		.border{
+			border-left: 2px solid;
+			float: left;
+			height: 40px;
+			border-left-color: red;
+			margin-right: 10px;
+		}
+		#v{
+			margin-right: 10px;
+		}
+		.to{
+			color: purple;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div class="div3">
+	<div class="top">
+		<div class="new">
+			<button id="pencil"><img src="pencil.png" ></button><span id="nimp">New Message</span></div>
+		<div class="r1">
+			<div class="container">
+  				<input class="main" placeholder="search..." >
+  				<span class="searchicon"></span>
+			</div>
+			<button id="pencil"><img src="settings.png" ></button>
+			<button id="pencil"><img src="off-button.png"></button>
+		</div>
+	</div>
+	<div class="second">
+		<div id="wordsleft">
+			<button id="p">CHAT</button>
+			<button id="p">ATTACHMENTS</button>
+		</div>
+		<div class="right">
+			<button id="pencil2"><img src="forward.png"></button><br>
+			<button id="pencil2"><img src="reply-all.png"></button><br>
+			<button id="pencil2"><img src="right-arrow (2).png"></button><br>
+		</div>
+		<div class="box1">
+			<p> Re: New Mail<span id="left2">Today 11:45</span></p>
+			<p>from: <a href="mailto" class="to">Kaled Saleh</a></p>
+			<p>to: 	<a href="mailto" class="to">abd alkadri</a><span id="left2"><img src="verified.png" id="v"> <img src="poison.png" id="v"> <img src="delete.png"></span></p>
+			<div class="line"></div>
+			<p><textarea name="textmessage" rows="10" cols="80" style="width :100%">Text message...</textarea>
+			<div class="line"></div>
+			<p><img src="presentation.png"> Home.ppt(12mb) <img src="logotype.png"> About.pdf(3mb) <!-- <span class="border"></span> --><button class="downarrow"><img src="down-arrow.png"></button></p>
+		</div>
+		<div class="box1">
+			<p> New Mail<span id="left2">Today 11:45</span></p>
+			<p>from: <a href="mailto" class="to">Kaled Saleh</a></p>
+			<p>to: 	<a href="mailto" class="to">abd alkadri</a><span id="left2"><img src="verified.png" id="v"> <img src="poison.png" id="v"> <img src="delete.png"></span></p>
+			<div class="line"></div>
+			<p><textarea name="textmessage" rows="10" cols="80" style="width :100%">Text message...</textarea>
+			<div class="line"></div>
+			<p><span class="border"></span> abdelkadie.com <br> +961 71 609 071</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
