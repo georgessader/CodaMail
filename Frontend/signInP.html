@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="input.css">
+	<style type="text/css">
+		body{
+			background-image: url(back.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+		#all{
+			display: flex;
+			border: 1px solid;
+			border-color: white;
+			border-radius:20px;
+			margin: 50px;
+			background-color: white;
+		}
+		#div1{
+			flex: 1;
+			background-image: url(back1.jpg);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			border: 1px ;
+			border-top-left-radius: 20px;
+			border-bottom-left-radius:20px;
+			padding: 120px 120px 300px 120px;
+		}
+		#div2{
+			flex: 1.5;
+			padding: 20px;
+			margin-left: 100px;
+			margin-top: 100px;
+
+		}
+		#inp-icon2{
+		background: url(iconpass.png)no-repeat 100%;
+		background-position:1px ;
+		background-size: 40px;
+		padding: 10px 10px 5px 40px;
+		margin: 0px 15px 6px 15px;
+		border-bottom: 4px solid rgb(0,99,173);
+		border-top-style: none;
+		border-left-style: none;
+		border-right-style: none;
+		color: rgb(1,46,108);
+		font-weight: bold;
+	}
+		#signin{
+			border-style: solid;
+			border-radius: 8px; 
+			width: 35%;
+			margin-top: 20px;
+			margin-left: 15px;
+			background-color: rgb(1,11,64);
+			color: white;
+			font-size: 20px;
+			padding: 15px;
+			 
+		}
+		#sin2{
+			margin-left: 15px;
+		}
+		#acc{
+			color: rgb(1,11,64);
+			margin-left: 15px;
+
+			font-size: 15px;
+			font-style: arial;
+			text-decoration: none;
+			
+		}
+		#ca{
+			color: rgb(1,11,64);
+			margin-left: 15px;
+			font-size: 15px;
+			font-style: arial;
+			text-decoration: none;
+			
+
+		}
+		#wp{
+			color: white;
+			text-align: center;
+			margin-top: 180px;
+			margin-right: 100px;
+			font-size: 35px;
+		}
+		#sin1{
+			color: white;
+			font-size:20px;
+			margin-left: 130px;
+			margin-top: 50px;
+
+		}
+		#all{
+			border-style: solid;
+			border-color: black;
+			border-width:2px;
+		}
+		#logo{
+			
+		}
+
+</style>
+
+</head>
+<body>
+<div id="all">
+	<div id="div1">
+		<div id="logo">
+			<img src="">
+			
+		</div>
+		<h1 ID="wp">WELCOME PAGE</h1>
+		<p id="sin1">Sign in <br>to continue to-mail</p>
+	</div>
+	<div id="div2">
+		<h1 id="sin2">SIGN IN</h1>
+		<form>
+		<p><input type="email" name="email" placeholder="Email" id="inp-icon1">
+		<p><input type="password" name="pass"  placeholder="Password" id="inp-icon2">
+		<p><input type="submit" name="SIGN In" value="SIGN IN" id="signin">
+		</form>
+		<p><a href="" id="ca"><b>Create Acount</b></a>
+			
+	</div>
+</div>
+</body>
+</html>
